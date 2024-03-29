@@ -28,7 +28,114 @@ body{
     height: 100vh;
 }
 
+main {
+    padding: 40px;
+}
+
 
 .flex{
     display: flex;
+}
+
+.btn-config button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 200px;
+    color: var(--azul_mais_claro);
+    background-color: var(--azul_escuro);
+    /* tirando as bordas */
+    border-color: var(--azul_mais_escuro);
+    /* deixando as bordas arredondadas */
+    border-radius: 10px;
+    /* mudança de cursos */
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px var(--azul_mais_claro);
+    transform: scale(1.05)
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #7b3ddc;
+}
+
+/*  */
+/*  */
+/*  */
+/* ESTILO DO ASIDE */
+aside {
+    background-color: var(--azul_mais_claro);
+    height: 100vh;
+    width: 300px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+aside .container-aside {
+    color: var(--azul_escuro);
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+aside .container-aside span {
+    color: var(--cor_letras);
+}
+
+aside .container-aside .logo-clube img{
+    width: 70%;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+
+aside .container-aside .btn-config {
+    margin-top: 50px;
+}
+
+/*  */
+/*  */
+/*  */
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 10px 4%;
+}
+
+/* ele busca diretamente com o '>' o elemento dentro do header */
+header > .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: var(--cor_letras);
+    /* tirando o sublinhado */
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+/* a ':hover' serve para ativar a função do passar o mouse na string */
+header a:hover{
+    color: var(--azul_normal);
+    transform: scale(1.05);
+}
+
+header nav ul{ 
+    list-style-type: none; 
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
 }
