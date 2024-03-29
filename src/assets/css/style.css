@@ -59,13 +59,13 @@ button:hover, form .btn-enviar input:hover{
 }
 
 h2.titulo{
-    color: #fff;
+    color: var(--azul_escuro);
     font-size: 40px;
     text-align: center;
 }
 
 h2.titulo span{
-    color: #7b3ddc;
+    color: var(--azul_normal);
 }
 
 /*  */
@@ -74,7 +74,7 @@ h2.titulo span{
 /* ESTILO DO ASIDE */
 aside {
     background-color: var(--azul_mais_claro);
-    height: 100vh;
+    height: 110vh;
     width: 300px;
     border-radius: 0px 20px 20px 0px;
     /* flex: 1; */
@@ -151,8 +151,7 @@ section.carrosel .content-slideshow {
     width: 935px;
     border-radius: 20px;
     overflow: hidden;
-    position: absolute;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 .content-slideshow .slides {
@@ -190,8 +189,8 @@ section.carrosel .content-slideshow {
 
 .content-slideshow .navigation {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
+    bottom: 300px;
+    left: 57%;
     transform: translate(-50%);
     display: flex;
 }
@@ -210,4 +209,62 @@ section.carrosel .content-slideshow {
     background-color: var(--cor_letras);
     width: 90px;
     height: 20px;
+}
+
+
+
+/* .. */
+/* .. */
+/* .. */
+/* PRODUTOS */
+section.products{
+    padding: 40px 4%;
+}
+
+section.products .flex{
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.products .anuncOne{
+    margin-top: 20px;
+}
+
+.products .ingresso-img{
+    position: absolute;
+}
+
+.products .ingresso-img img{
+    width: 300px;
+}
+
+.products .informations{
+    margin-left: 400px;
+    margin-top: 80px;
+}
+
+.products .informations i{
+    color: var(--azul_escuro);
+}
+
+.products .informations .buttons a{
+    text-decoration: none;
+    color: var(--azul_normal);
+    margin-left: 15px;
+}
+
+.products .informations button{
+    margin-top: 40px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--azul_normal);
+    /* tirando as bordas */
+    border: 0;
+    /* deixando as bordas arredondadas */
+    border-radius: 30px;
+    /* mudança de cursos */
+    cursor: pointer;
+    transition: .2s;
 }
