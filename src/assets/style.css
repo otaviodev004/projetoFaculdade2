@@ -1,4 +1,34 @@
-* {
+/* VARIAVEIS DE COR */
+:root {
+    --azul_mais_claro: #d4eaf7;
+    --azul_normal: #71c4ef;
+    --azul_escuro: #00668c;
+    --azul_mais_escuro: #313d44;
+    --branco: #fffefb;
+    --cinza_claro: #f5f4f1;
+    --conza_escuro: #cccbc8;
+    --cor_letras: #1d1c1c;
+    --font_tittle: "Bebas Neue", sans-serif;
+    --font_text: "Oswald", sans-serif;
+}
+
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font_text);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: var(--branco);
+    height: 100vh;
+}
+
+
+.flex{
+    display: flex;
 }
