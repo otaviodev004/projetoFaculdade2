@@ -374,3 +374,42 @@ section.products .flex{
     margin-right: 52px;
     }
 }
+
+@media only screen and (max-device-width: 390px) {
+
+    section.carrosel .content-slideshow {
+        margin-left: -6%;
+    }
+
+    section.carrosel .content-slideshow {
+        width: 362px;
+        height: 232px;
+    }
+
+    aside .container-aside {
+        margin-top: 0px;
+    }
+
+    aside .container-aside .btn-config {
+        margin-top: 17px;
+    }
+
+    .products .informations {
+        margin-left: 282px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-device-width: 384px) {
+    aside .container-aside {
+        margin-top: 0px;
+    }
+
+    .products .informations {
+        margin-left: 282px;
+    }
+}
